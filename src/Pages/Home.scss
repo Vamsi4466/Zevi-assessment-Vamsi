@@ -1,0 +1,113 @@
+.home {
+    min-height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .home_content {
+    padding: 2rem 0 0.5rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .input_container {
+    width: 45rem;
+    max-width: 90vw;
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+  
+    .home_input {
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      font-size: 1.2rem;
+      height: 2.2rem;
+    }
+  
+    .search_icon_container {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      padding: auto;
+      color: gray;
+      font-weight: lighter;
+    }
+  }
+  
+  .latest_trend_and_suggestion_box {
+    max-width: 90vw;
+    background-color: white;
+    // border-radius: 1rem;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .latest_trend_products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+  }
+  
+  .category_title {
+    padding: 0.5rem 0;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .latest_trend_product {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    cursor: pointer;
+  
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 0.5s;
+    }
+  
+    img {
+      border-radius: 0.2rem;
+      width: 10rem;
+    }
+  
+    div {
+      font-size: 0.8rem;
+    }
+  }
+  
+  .suggestion_product {
+    cursor: pointer;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    line-height: 2rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .latest_trend_products {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .latest_trend_products {
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+    }
+  
+    .latest_trend_product img {
+      width: 100%;
+    }
+  }
+  
